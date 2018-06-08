@@ -1,1 +1,59 @@
-Hello World
+<!DOCTYPE html lang="pt-BR">
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Working with Apache Cordova</title>
+	<link rel="stylesheet" type="text/css" href="css/estiloso.css">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:700,400,300,700italic,400italic,300italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	
+	<center>
+		<div class="faixaTopo"></div>
+		<div class="topo largura">
+			<a href="/"><div class="logo"></div></a>
+			<div class="menu">
+				<a href="/"><li>Home</li></a>
+				<a href="whatscordova.html"><li>What's Cordova?</li></a>
+				<a href="getstarted.html"><li>Get Started</li></a>
+				<a href="documentation.html"><li>Documentation</li></a>
+			</div>
+		</div>
+		<div class="largura corpo">
+			<h1>Welcome to Apache Cordova</h1>
+			<p>Apache Cordova is an open-source mobile development framework. It allows you to use standard web technologies - HTML5, CSS3, and JavaScript for cross-platform development. Applications execute within wrappers targeted to each platform, and rely on standards-compliant API bindings to access each device's capabilities such as sensors, data, network status, etc.</p>
+
+			<p>Use Apache Cordova if you are:</p>
+			<ul>
+    			<li>a mobile developer and want to extend an application across more than one platform, without having to re-implement it with each platform's language and tool set.</li>
+
+    			<li>a web developer and want to deploy a web app that's packaged for distribution in various app store portals.</li>
+
+    			<li>a mobile developer interested in mixing native application components with a WebView (special browser window) that can access device-level APIs, or if you want to develop a plugin interface between native and WebView components.</li>
+    		</ul>	
+
+    		<h2>Architecture</h2>
+    		<p>There are several components to a cordova application. The following diagram shows a high-level view of the cordova application architecture.</p>
+    		<center>
+    			<img src="img/cordovaapparchitecture.png" class="imgM">
+    		</center>
+    		<div class="col">
+    			<h2>WebView</h2>
+
+				<p>The Cordova-enabled WebView may provide the application with its entire user interface. On some platforms, it can also be a component within a larger, hybrid application that mixes the WebView with native application components. (See Embedding WebViews for details.)</p>
+    		</div>	
+    		<div class="col">
+    			<h2>Web App</h2>
+
+				<p>This is the part where your application code resides. The application itself is implemented as a web page, by default a local file named index.html, that references CSS, JavaScript, images, media files, or other resources are necessary for it to run. The app executes in a WebView within the native application wrapper, which you distribute to app stores.</p>
+    		</div>	
+    		<div class="limpa"></div>
+		</div>
+		<div class="faixaTopo">
+			<div class="rodape">
+				Working with Apache Cordova - 2018
+			</div>
+		</div>
+	</center>
+</body>
+</html>

@@ -1,0 +1,91 @@
+body{
+	margin:0px;
+	background-color: #05151d;
+	background-image: url('../img/bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.faixaTopo{
+	width: 100%;
+	height: 100px;
+	background-color: #66757e;
+}
+.largura{
+	width: 960px;
+}
+.topo{
+	text-align: center;
+	margin-top: -90px;
+	position: relative;
+}
+.logo{
+	width: 250px;
+	height: 100px;
+	background-image: url('../img/Apache_Cordova1.png');
+	background-size: 250px;
+	background-repeat: no-repeat;
+}
+.menu{
+	width: 70%;
+	height: 150px;
+	position: absolute;
+	top:25px;
+	right: 0px;
+	text-align: right;
+}
+.menu li{
+	list-style-type: none;
+	float: left;
+	margin-right: 10px;
+	font-size: medium;
+	font-family: "Raleway", Helvetica, Arial, sans-serif;
+}
+.menu a:link{
+	text-decoration: none;
+	color: white;
+}
+.menu a:hover{
+	color:#cccccc;
+}
+.corpo{
+	background-color: white;
+	padding: 0 5px 5px 5px;
+	border-radius: 10px;
+	text-align: left;
+	margin-bottom: 20px;
+}
+h1,h2,h3,h4{
+	color: #2C7185;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+}
+h1{
+	font-size: 38px;
+    font-weight: normal;    
+}
+h2{
+	font-size: 28px;
+	font-weight: normal;
+}
+
+.imgM{
+	width: 60%;
+	height: auto;
+}
+
+.col{
+	width: 48%;
+	float: left;
+	padding:7px;
+	text-align: justify;
+}
+.col h2{
+	color: 	#D60C3F;
+}
+.limpa{
+	clear: both;
+}
+.rodape{
+	text-align: center;
+	padding-top: 30px;
+	font-family: "Raleway", Helvetica, Arial, sans-serif;
+}
