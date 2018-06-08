@@ -10,6 +10,11 @@ body{
 	height: 100px;
 	background-color: #66757e;
 }
+.sombra-bottom{
+	-moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
 .largura{
 	width: 960px;
 }
@@ -43,9 +48,11 @@ body{
 .menu a:link{
 	text-decoration: none;
 	color: white;
+	-webkit-transition: 2s; /* Safari */
+    transition: 2s;
 }
 .menu a:hover{
-	color:#cccccc;
+	color:#0bc3ad;
 }
 .corpo{
 	background-color: white;
@@ -53,6 +60,7 @@ body{
 	border-radius: 10px;
 	text-align: left;
 	margin-bottom: 20px;
+	z-index: -10;
 }
 h1,h2,h3,h4{
 	color: #2C7185;
@@ -67,9 +75,10 @@ h2{
 	font-weight: normal;
 }
 
-.imgM{
-	width: 60%;
-	height: auto;
+.sombra-box{
+	-moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 
 .col{
@@ -88,4 +97,54 @@ h2{
 	text-align: center;
 	padding-top: 30px;
 	font-family: "Raleway", Helvetica, Arial, sans-serif;
+}
+img{
+	width: 100%;
+	border: 1px solid #8a4419;
+}
+
+#boxshadow {
+    position: relative;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    padding: 10px;
+    background: white;
+    z-index: 1000;
+}
+.porta-foto{
+	position: relative;
+	z-index: 10;
+}
+.porta-foto::after {
+    content: '';
+    position: absolute;
+    z-index: -2; /* hide shadow behind image */
+    -webkit-box-shadow: 0 20px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 20px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 30px 15px rgba(0, 0, 0, 0.4);                
+    width: 70%; 
+    right: 2%; /* one half of the remaining 30% */
+    height: 100px;
+    bottom: 30px;
+    transform: rotate(3deg);
+}
+.porta-foto::before {
+    content: '';
+    position: absolute;
+    z-index: -2; /* hide shadow behind image */
+    -webkit-box-shadow: 0 20px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 20px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 30px 15px rgba(0, 0, 0, 0.4);                
+    width: 70%; 
+    left: 2%; /* one half of the remaining 30% */
+    height: 100px;
+    bottom: 30px;
+    transform: rotate(-3deg);
+}
+
+@media max-width: 600px{
+	.corpo{
+		text-align: justify-all;
+	}
 }
